@@ -16,8 +16,8 @@ while True:
     image = cv2.resize(image, (640, 480)) 
   
     # the color ranges
-    u_black = np.array([0, 0, 0]) 
-    l_black = np.array([0,0,30]) 
+    u_black = np.array([104, 153, 70]) 
+    l_black = np.array([30, 30, 0]) 
     
     # the mask using inrange of cv2
     mask = cv2.inRange(frame, l_black, u_black) 
